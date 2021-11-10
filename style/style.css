@@ -26,6 +26,7 @@ div img{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
 }
 
 header{
@@ -139,6 +140,7 @@ header .menu{
 .list-servicos{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .list-servicos .item-servicos{
@@ -246,4 +248,81 @@ header .menu{
     height: 10px;
     background-color: #190C65;
     margin-right: 5px;
+}
+
+footer{
+    background-color: #190C65;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/*mobile*/
+@media(max-width: 992px){
+    div img{
+        width: 70%;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation{
+        flex-direction: column-reverse;
+    }
+
+    .presentation img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .presentation .text-presentation{
+        width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: 40px 55px;
+        align-content: center;
+    }
+
+    .list-servicos{
+        flex-direction: column;
+    }
+
+    .item-servicos img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .item-servicos a{
+        margin-bottom: 20px;
+    }
+
+    .list-planos{
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-planos{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .menu{
+        flex-direction:row;
+    }    
 }
