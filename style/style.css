@@ -76,7 +76,7 @@ header .menu{
     margin-bottom: 10px;
 }
 
-.text-presentation a{
+.btn{
     background-color: #190C65;
     color: #fff;
     text-align: center;
@@ -138,7 +138,7 @@ header .menu{
 
 .list-servicos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .list-servicos .item-servicos{
@@ -157,11 +157,93 @@ header .menu{
     text-decoration: none;
     font-size: 15px;
     color: #190C65;
-    font-weight: bold;
+    font-weight: 700;
+    display: block;
 }
 
+.item-servicos p{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    
+    color: #fff;
+}
 
 .item-servicos img{
+    width: 80%;
+    margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+#planos h2{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.list-planos{
     display: flex;
-    margin-bottom: 50px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.item-planos{
+    flex: 1;
+    border: 5px solid #190C65;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 250px;
+}
+
+.item-planos .btn{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: auto;
+}
+
+.item-planos h3{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item-planos h3::after{
+    content: "";
+    background-color: #190C65;
+    width: 100%;
+    height: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item-planos ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; 
+}
+
+.item-planos ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.item-planos ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #190C65;
+    margin-right: 5px;
 }
